@@ -5,3 +5,5 @@ When "seleccionar" button is clicked it will randomly display five options: 2 ty
 
 The goal of this small program is to have an initial idea for painting in traditional styles.
 
+The language is in Spanish.
+
