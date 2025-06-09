@@ -1,0 +1,98 @@
+body{
+  font-family: 'Grenze', serif;
+  background-color: whitesmoke;
+}
+
+.button{
+  padding: 12px 20px;
+  background-color: rgb(183, 24, 183);
+  font-family: 'Grenze', serif;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards{
+  width: 100vw;
+  max-width: 90%;
+  display: grid;
+  /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
+  grid-template-areas: 
+  "card1 card2"
+  "card3 card4"
+  "card5 .";
+  gap: 16px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 250px;
+  width: 250px;
+  background-color: rgb(183, 24, 183);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: -2px 2px 18px 13px rgba(141,138,142,0.42);
+
+}
+
+.box1{
+  grid-area: card1;
+}
+
+.box2{
+  grid-area: card2;
+}
+
+.box3{
+  grid-area: card3;
+}
+
+.box4{
+  grid-area: card4;
+}
+
+.box5{
+  grid-area: card5;
+}
+
+@keyframes spin{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(180deg);
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .cards{
+  width: 100vw;
+  max-width: 90%;
+  display: grid;
+  /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
+  grid-template-areas: 
+  "card1 card2 card3 card4"
+  "card5 . . .";
+  gap: 16px;
+}
+}
