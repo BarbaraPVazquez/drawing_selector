@@ -22,12 +22,14 @@ body{
 .cards{
   width: 100vw;
   max-width: 90%;
+  height: 100vh;
   display: grid;
   /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
   grid-template-areas: 
   "card1 card2"
   "card3 card4"
-  "card5 .";
+  "card5 card6"
+  "card7 card8";
   gap: 16px;
 }
 
@@ -36,8 +38,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
 }
 
 .box{
@@ -75,6 +77,18 @@ body{
   grid-area: card5;
 }
 
+.box6{
+  grid-area: card6;
+}
+
+.box7{
+  grid-area: card7;
+}
+
+.box8{
+  grid-area: card8;
+}
+
 @keyframes spin{
   from{
     transform: rotateY(0deg);
@@ -92,7 +106,7 @@ body{
   /* grid-template: repeat(3, 1fr) / repeat(4, 1fr); */
   grid-template-areas: 
   "card1 card2 card3 card4"
-  "card5 . . .";
+  "card5 card6 card7 card8";
   gap: 16px;
 }
 }
